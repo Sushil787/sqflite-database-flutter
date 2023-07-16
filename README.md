@@ -1,16 +1,17 @@
-# appsqflite
+# Note App using Sqflite Database and Provider
 
-A new Flutter project.
+This is a simple note-taking app built using Flutter that utilizes the `sqflite` database plugin and the `provider` package for state management.
 
-## Getting Started
+## Features
 
-This project is a starting point for a Flutter application.
+- Create, edit, and delete notes.
+- Store notes locally using `sqflite` database.
+- Use the `provider` package for efficient state management.
 
-A few resources to get you started if this is your first Flutter project:
+## Dependencies
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+The app relies on the following dependencies:
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- `sqflite`: A Flutter plugin for SQLite database integration.
+- `provider`: A state management package for Flutter applications.
+

@@ -1,3 +1,5 @@
+import 'dart:developer';
+
 import 'package:appsqflite/database/notes_db.dart';
 import 'package:appsqflite/model/note.dart';
 import 'package:flutter/widgets.dart';
@@ -31,9 +33,9 @@ class NoteProvider extends ChangeNotifier {
   }
 
   Future addNote(Note note) async {
-    print("------------------------------------------------------------------");
+    log("------------------------------------------------------------------");
     note = await NotesDatabase.instance.create(note);
-    print("------------------------------------------------------------------");
+    log("------------------------------------------------------------------");
     notifyListeners();
   }
 

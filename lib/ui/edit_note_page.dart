@@ -1,3 +1,5 @@
+import 'dart:developer';
+
 import 'package:appsqflite/provider/note_provider.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
@@ -109,8 +111,8 @@ class _AddEditNotePageState extends State<AddEditNotePage> {
       description: description,
       createdTime: DateTime.now(),
     );
-    print("object created --------------------------------------------------");
+    log("object created --------------------------------------------------");
     await Provider.of<NoteProvider>(context).addNote(note);
-    print("object created --------------------------------------------------");
+    log("object created --------------------------------------------------");
   }
 }
